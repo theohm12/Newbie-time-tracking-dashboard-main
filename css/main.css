@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --self_care: hsl(43, 84%, 65%);
+    --Very_dark_blue: hsl(226, 43%, 10%);
+    --Dark_blue: hsl(235, 46%, 20%);
+    --Desaturated_blue: hsl(235, 45%, 61%);
+    --Pale_Blue: hsl(236, 100%, 87%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very_dark_blue);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20em;
+}
+/*=====================================================*/
+/*===================== menu-card =====================*/
+
+.menu-card {
+    width: 250px;
+    height: 535px;
+    border-radius: 15px;
+    margin-top: 2em;
+    background-color: var(--Dark_blue);
+}
+
+.card-report {
+    padding: 2em;
+    width: 250px;
+    height: 340px;
+    border-radius: 15px;
+    background-color: var(--Blue);
+}
+
+.card-report img {
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 70px;
+    margin-bottom: 3em;
+}
+
+.card-report p {    
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(209, 209, 209);
+}
+
+.name {
+    position: left;
+    margin: 0em 0em;
+    padding-right: 10em;
+    font-size: 36px;
+    font-weight: lighter;
+    color: white;
+
+}
+/*=====================================================*/
+/*==================== report-menu ====================*/
+.report-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    padding: 1em;
+    
+}
+
+.report-menu a {
+    color: var(--Desaturated_blue);
+    font-size: 18px;
+    margin: .5em 0em;
+    padding: 0em 1em;
+    text-decoration: none;
+}
+
+.report-menu .active-default, .report-menu .active { 
+    color: white;
+}
+/*=====================================================*/
+/*=================== card-gallery ====================*/
+ .card-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto  ;
+    padding: 0em;
+    margin: 0em 1em;
+    height: 500px;
+    width: 500px;
+ }
+
+ 
+.regular-card {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 0em 1em;
+    margin-bottom: 2em;
+}
+.regular-card .property-card
+ {
+    position: relative;
+    background-color: var(--Dark_blue);
+    margin-top: 2.7em;
+    border-radius: 15px;
+    padding: 2em;
+    width: 250px;
+    height: 210px;
+    cursor: pointer;
+
+}
+
+.regular-card .property-card:hover {
+    background-color: hsl(236, 44%, 33%);;
+  }
+
+.regular-card .property-card .row-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.regular-card .property-card .row-1 .title {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+.regular-card .property-card .row-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.regular-card .property-card .row-2 .hours {
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.regular-card .property-card .row-2 .description {
+    color: var(--Desaturated_blue);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: .5em;
+  }
+
+.points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.regular-card .property-card .row-1 .points .point {
+    background-color: #bdc1ff;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    margin: 0.2rem;
+ 
+}
+
+  .regular-card .property-card .row-1 .points:hover .point {
+    background-color: white;
+  }
+
+  .regular-card .property-card .row-1 .points:hover::before {
+    background-color: #1c1f4a;
+    display: block;
+  }
+  
+ .work {
+    background-color: var(--work);
+    background-image: url(../images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+ }
+
+ .play {
+    background-color: var(--play);
+    background-image: url(../images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+ }
+
+ .study {
+    background-color: var(--study);
+    background-image: url(../images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+ }
+
+ .exercise {
+    background-color: var(--exercise);
+    background-image: url(../images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -1%;
+ }
+
+ .social {
+    background-color: var(--social);
+    background-image: url(../images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -10%;
+ }
+
+ .selfcare {
+    background-color: var(--self_care);
+    background-image: url(../images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -7%;
+ }
+
+ .attribution {
+     
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+ 
+ /*=====================================================*/
+
+ @media only screen and (max-width: 960px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 145vh;
+    }
+
+    .container {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0em;
+    }
+
+/*=====================================================*/
+/*===================== menu-card =====================*/
+    .menu-card {
+        width: 375px;
+        height: 205px;
+        border-radius: 15px;
+        background-color: var(--Dark_blue);
+    }
+
+    .card-report {
+        display: flex;
+        padding: 1em;
+        width: 375px;
+        height: 140px;
+        border-radius: 15px;
+        background-color: var(--Blue);
+    }
+
+    .p-name {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em .5em;
+    }
+    
+    .card-report img {
+        height: 60%;
+        width: 20%;
+        border: 3px solid white;
+        border-radius: 70px;
+        margin: 1em;
+    }
+    
+    .card-report p {    
+        font-size: 18px;
+        font-weight: lighter;
+        color: rgb(209, 209, 209);
+    }
+    
+    .name {
+        margin: 0em 0em;
+        padding-right: 0em;
+        font-size: 28px;
+        font-weight: lighter;
+        color: white;
+    
+    }
+
+    .report-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: white;
+        padding: 1em;
+        
+    }
+
+/*=====================================================*/
+/*=================== card-gallery ====================*/
+    .card-gallery {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        height: 500px;
+        width: 375px;
+    }
+
+    
+    .regular-card {
+        width: 375px;
+        height: 150px;
+        border-radius: 15px;
+        margin-bottom: 2em;
+        margin-left: 0em;
+    }
+    .regular-card .property-card
+    {
+        background-color: var(--Dark_blue);
+        margin-top: 2.5em;
+        border-radius: 15px;
+        padding: 2em 1.5em;
+        width: 375px;
+        height: 110px;
+    }
+
+    .regular-card .property-card:hover {
+        background-color: hsl(236, 44%, 33%);;
+    }
+
+    .regular-card .property-card .row-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .regular-card .property-card .row-1 .title {
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+
+    }
+
+    .regular-card .property-card .row-2 {
+        display: flex;
+        margin-top: .5em;
+        padding: 0em;
+    }
+
+    .regular-card .property-card .row-2 .hours {
+        color: white;
+        font-size: 30px;
+        font-weight: lighter;
+        margin-right: 1em;        
+    }
+
+    .regular-card .property-card .row-2 .description {
+        color: var(--Desaturated_blue);
+        font-size: 18px;
+        font-weight: lighter;
+        margin-top: .5em;
+        right: 1.5em;
+        position: absolute;
+
+    }
+
+    .points {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .regular-card .property-card .row-1 .points .point {
+        background-color: #bdc1ff;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        margin: 0.2rem;
+    
+    }
+
+    .attribution {
+     
+       display: none;
+    }
+
+ }
